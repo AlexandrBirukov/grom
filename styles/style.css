@@ -1,0 +1,30 @@
+:root {
+    --dark: #231f20;
+    --red: #ed2024;
+    --grey: #606161;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    position: relative;
+    background: white;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    -webkit-text-size-adjust: none;
+}
+
+#screen-1 {
+    height: 300vh;
+}
