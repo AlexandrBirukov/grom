@@ -47,18 +47,18 @@ $(function () {
 
     function init() {
         myMap = new ymaps.Map('map', {
-            center: [59.945557564159294, 30.348359999999975],
+            center: [56.108984, 40.340384],
             zoom: 17,
             controls: []
         }, {
             searchControlProvider: 'yandex#search'
         });
-        event_item = new ymaps.Placemark([59.945557564159294, 30.348359999999975], {
-            balloonContent: '<strong>ГРОМ</strong><br>г. Санкт-Петербург, Литейный пр-т д.9<br>+7-921-905-24-84',
-            hintContent: '<strong>ГРОМ</strong><br>г. Санкт-Петербург, Литейный пр-т д.9<br>+7-921-905-24-84',
+        event_item = new ymaps.Placemark([56.108984, 40.340384], {
+            balloonContent: '<strong>ГРОМ</strong><br>г. Владимир, ул.Верхняя Дуброва д.26<br>+7-900-479-28-08',
+            hintContent: '<strong>ГРОМ</strong><br>г. Владимир, ул.Верхняя Дуброва д.26<br>+7-900-479-28-08',
         }, {
             preset: 'islands#icon',
-            iconColor: '#a7142c'
+            iconColor: '#ff0000'
         });
         myMap.geoObjects.add(event_item);
         myMap.behaviors.disable('scrollZoom');
