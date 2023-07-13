@@ -22,13 +22,13 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <!-----------------open graph teg-->>
+
     <meta property="og:type" content="website">
     <meta property="og:title" content="Клуб единоборств ГРОМ">
-    <meta property="og:description" content="Современный клуб единоборств во Владимире. Опытные тренеры. Большое количество дисциплин.300 квадратных метров мягкой поверхности. ">
+    <meta property="og:description"
+        content="Современный клуб единоборств во Владимире. Опытные тренеры. Большое количество дисциплин.300 квадратных метров мягкой поверхности. ">
     <meta property="og:url" content="https://клубгром.рф">
     <meta property="og:image" content="https://клубгром.рф/mma.jpg">
-    <!-----------------end open graph teg-->>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/screen-1.css">
     <link rel="stylesheet" href="styles/screen-4.css">
     <link rel="stylesheet" href="styles/footer.css">
 
@@ -65,64 +66,131 @@
         </div>
     </header>
 
-    <!--<div id="screen-1"></div>-->
-    <!--witas discipline section-->
-    <article id="discip"></article>
-    <div class="headerdscpl">ДИСЦИПЛИНЫ
-        <div class="container">
-                <div class="discipline" style= "background-image: url(https://sporttob.ru/wp-content/uploads/2018/04/page-1_img09.jpg);">          
-          <div class="discname">РУКОПАШНЫЙ БОЙ</div>
-          <div class="discline"></div> 
-          <div class="discopis">Рациональное применение грубой физической силы с использованием специальных приёмов борьбы, ударной техники.</div>    
-            </div>    
-          
-          <div class="discipline" style= "background-image: url(https://kemerovo.bonodono.ru/upload/iblock/0a3/0a368b227dc94251ab201b6355d2f564.jpg);">
-          <div class="discname">БОКС</div>
-            <div class="discline"></div> 
-          <div class="discopis">Контактный вид спорта, единоборство, в котором спортсмены наносят друг другу удары кулаками обычно в специальных перчатках.</div>    
+    <div id="screen-1">
+        <h3>Дисциплины</h3>
+        <div class="wrapper">
+            <!-- <div class="big-item" style="background: url(img/ed/1.jpg)"> -->
+            <div class="big-item" class="parallax-window" data-parallax="scroll" data-image-src="img/ed/1.jpg">
+                <div class="for-text">
+                    <h4>Рукопашный бой</h4>
+                    <p>&sdot; Подходит: Мужчинам</p>
+                    <p>&sdot; Продолжительность тренировки: 60 минут</p>
+                    <p>&sdot; Формат: Мини-группа и Персонально</p>
+                </div>
             </div>
-            
-          <div class="discipline" style= "background-image: url(https://static01.nyt.com/images/2023/01/05/multimedia/05jakepaul-mma-top/-1-3e75-superJumbo.jpg?quality=75&auto=webp);">
-          <div class="discname">ММА (Смешанные единоборства)</div>
-            <div class="discline"></div> 
-          <div class="discopis">Представляют собой единоборство с сочетанием множества техник.</div>    
-            </div>
-          
-          <div class="discipline" style= "background-image: url(https://img.olympicchannel.com/images/image/private/t_s_w1340/t_s_16_9_g_auto/f_auto/primary/e5eidjphojare3zimoik);">
-          <div class="discname">САМБО</div>
-            <div class="discline"></div> 
-          <div class="discopis">Вид спортивного и прикладного единоборства, разработанный в СССР на основе борьбы дзюдо, джиу-джитсу.</div>    
-            </div>
-          
-        <div class="discipline" style= "background-image: url(https://cska.ru/upload/gallery_562794d6c7c1a.jpg);">
-          <div class="discname">ВОЛЬНАЯ БОРЬБА</div>
-          <div class="discline"></div> 
-          <div class="discopis">Вольная борьба представляет собой единоборство с применением комплекса приемов — бросков, захватов, переворотов — благодаря которым спортсмен пытается уложить соперника на лопатки.</div>    
-            </div>
-          
-          <div class="discipline" style= "background-image: url(https://tigerclub.moscow/assets/img/grappling-03.webp);">
-          <div class="discname">ГРЭППЛИНГ</div>
-            <div class="discline"></div> 
-          <div class="discopis">Стиль ближнего боя в единоборствах с использованием захватов.</div>    
-            </div>
-          
-          <div class="discipline" style= "background-image: url(https://avatars.dzeninfra.ru/get-zen_doc/4055632/pub_6379f77aeebee879e53c9397_6379f793d824761c608a1deb/scale_1200);">
-          <div class="discname">ЖЕНСКАЯ САМООБОРОНА</div>
-            <div class="discline"></div> 
-          <div class="discopis">Программа для женщин, направленная на обучение действиям для защиты себя, имущества, другого человека.</div>    
-            </div>
-          
-          <div class="discipline" style= "background-image: url(https://uploads-ssl.webflow.com/625fccd219e78a162a1c4f24/62b5e3e7c5a0e8ef03ec54fd_IMG_0191.jpg" class="gallery__img);">
-          <div class="discname">Детское ОФП</div>
-            <div class="discline"></div> 
-          <div class="discopis">ОФП (общая физическая подготовка)- представляет собой систему упражнений, каждое из которых направлено на укрепление и развитие важных физических навыков.        </div>    
+
+            <div class="grid-wrapper">
+                <div class="item" style="background: url(img/ed/2.jpg)">
+                    <div class="for-text">
+                        <h4>Бокс</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolor accusantium
+                            voluptatibus dolorem, quod eveniet.</p>
+                    </div>
+                </div>
+                <div class="item" style="background: url(img/ed/3.jpg)">
+                    <div class="for-text">
+                        <h4>Смешанные единоборства</h4>
+                        <p>&sdot; Продолжительность тренировки: 60 минут</p>
+                        <p>&sdot; Формат: Мини-группа и Персонально</p>
+                    </div>
+                </div>
+                <div class="item" style="background: url(img/ed/4.jpg)">
+                    <div class="for-text">
+                        <h4>Грепплинг</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolor accusantium
+                            voluptatibus dolorem, quod eveniet.</p>
+                    </div>
+                </div>
+                <div class="item" style="background: url(img/ed/5.jpg)">
+                    <div class="for-text">
+                        <h4>Женская самооборона</h4>
+                        <p>&sdot; Подходит: Женщинам</p>
+                        <p>&sdot; Продолжительность тренировки: 60 минут</p>
+                        <p>&sdot; Формат: Персонально</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!---end witas discipline section-->
+    <!--witas discipline section-->
+    <!-- <article id="discip">
+        <div class="headerdscpl">ДИСЦИПЛИНЫ
+            <div class="container">
+                <div class="discipline"
+                    style="background-image: url(https://sporttob.ru/wp-content/uploads/2018/04/page-1_img09.jpg);">
+                    <div class="discname">РУКОПАШНЫЙ БОЙ</div>
+                    <div class="discline"></div>
+                    <div class="discopis">Рациональное применение грубой физической силы с использованием специальных
+                        приёмов борьбы, ударной техники.</div>
+                </div>
+
+                <div class="discipline"
+                    style="background-image: url(https://kemerovo.bonodono.ru/upload/iblock/0a3/0a368b227dc94251ab201b6355d2f564.jpg);">
+                    <div class="discname">БОКС</div>
+                    <div class="discline"></div>
+                    <div class="discopis">Контактный вид спорта, единоборство, в котором спортсмены наносят друг другу
+                        удары
+                        кулаками обычно в специальных перчатках.</div>
+                </div>
+
+                <div class="discipline"
+                    style="background-image: url(https://static01.nyt.com/images/2023/01/05/multimedia/05jakepaul-mma-top/-1-3e75-superJumbo.jpg?quality=75&auto=webp);">
+                    <div class="discname">ММА (Смешанные единоборства)</div>
+                    <div class="discline"></div>
+                    <div class="discopis">Представляют собой единоборство с сочетанием множества техник.</div>
+                </div>
+
+                <div class="discipline"
+                    style="background-image: url(https://img.olympicchannel.com/images/image/private/t_s_w1340/t_s_16_9_g_auto/f_auto/primary/e5eidjphojare3zimoik);">
+                    <div class="discname">САМБО</div>
+                    <div class="discline"></div>
+                    <div class="discopis">Вид спортивного и прикладного единоборства, разработанный в СССР на основе
+                        борьбы
+                        дзюдо, джиу-джитсу.</div>
+                </div>
+
+                <div class="discipline"
+                    style="background-image: url(https://cska.ru/upload/gallery_562794d6c7c1a.jpg);">
+                    <div class="discname">ВОЛЬНАЯ БОРЬБА</div>
+                    <div class="discline"></div>
+                    <div class="discopis">Вольная борьба представляет собой единоборство с применением комплекса приемов
+                        —
+                        бросков, захватов, переворотов — благодаря которым спортсмен пытается уложить соперника на
+                        лопатки.
+                    </div>
+                </div>
+
+                <div class="discipline"
+                    style="background-image: url(https://tigerclub.moscow/assets/img/grappling-03.webp);">
+                    <div class="discname">ГРЭППЛИНГ</div>
+                    <div class="discline"></div>
+                    <div class="discopis">Стиль ближнего боя в единоборствах с использованием захватов.</div>
+                </div>
+
+                <div class="discipline"
+                    style="background-image: url(https://avatars.dzeninfra.ru/get-zen_doc/4055632/pub_6379f77aeebee879e53c9397_6379f793d824761c608a1deb/scale_1200);">
+                    <div class="discname">ЖЕНСКАЯ САМООБОРОНА</div>
+                    <div class="discline"></div>
+                    <div class="discopis">Программа для женщин, направленная на обучение действиям для защиты себя,
+                        имущества, другого человека.</div>
+                </div>
+
+                <div class="discipline"
+                    style="background-image: url(https://uploads-ssl.webflow.com/625fccd219e78a162a1c4f24/62b5e3e7c5a0e8ef03ec54fd_IMG_0191.jpg);"
+                    class="gallery__img">
+                    <div class="discname">Детское ОФП</div>
+                    <div class="discline"></div>
+                    <div class="discopis">ОФП (общая физическая подготовка)- представляет собой систему упражнений,
+                        каждое
+                        из которых направлено на укрепление и развитие важных физических навыков. </div>
+                </div>
+            </div>
+        </div>
+    </article> -->
 
     <div id="screen-2"></div>
     <div id="screen-3"></div>
+
     <div id="screen-4">
         <h3>Наш зал</h3>
         <p>
@@ -170,18 +238,12 @@
                 &copy; 2023 "ГРОМ"<br>Все права защищены
             </small>
         </div>
-        <div class="center">
-            <div id="map"></div>
-        </div>
         <div class="right">
-
             <a class="contact" href="tel:+79004792808">+7 (900) 479 28 08</a>
             <a class="contact" href="mailto:club.grom@yandex.ru">club.grom@yandex.ru</a>
-
             <address>
                 г.Владимир<br>ул.Верхняя Дуброва<br>д.26, цокольный этаж
             </address>
-
             <div class="social">
                 <a href="https://vk.com/klub.grom">
                     <img src="img/vk.svg" alt="vk">
@@ -189,14 +251,13 @@
                 <a href="https://t.me/clubgrom">
                     <img src="img/tg.svg" alt="tg">
                 </a>
-                <!--<a href="#">
-                    <img src="img/insta.svg" alt="insta">
-                </a>-->
             </div>
         </div>
+        <div id="map"></div>
     </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/parallax.min.js"></script>
     <script src="js/fancybox/jquery.fancybox.min.js"></script>
     <script src="js/index.js"></script>
 </body>

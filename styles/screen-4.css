@@ -33,7 +33,6 @@
     position: relative;
     min-width: 300px;
     height: 200px;
-    border-radius: 20px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -60,7 +59,7 @@
 
 @media only screen and (max-width: 850px) {
     #screen-4 {
-        padding: 20px;
+        padding: 20px 0;
     }
 
     #screen-4 h3 {
@@ -74,7 +73,6 @@
     }
 
     .item-photo {
-        border-radius: 10px;
         filter: grayscale(0);
     }
 
