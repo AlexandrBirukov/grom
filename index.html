@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/screen-1.css">
+    <link rel="stylesheet" href="styles/screen-3.css">
     <link rel="stylesheet" href="styles/screen-4.css">
     <link rel="stylesheet" href="styles/footer.css">
 
@@ -52,10 +53,11 @@
         <img class="logo" src="img/logo-long.svg" alt="log">
         <nav id="header-nav">
             <a class="nav-link" href="#screen-1">Дисциплины</a>
-            <a class="nav-link" href="#screen-2">Цены</a>
+            <!-- <a class="nav-link" href="#screen-2">Цены</a>
             <a class="nav-link" href="#screen-3">Тренеры</a>
-            <a class="nav-link" href="#screen-4">Расписание</a>
-            <a class="nav-link" href="#footer">Контакты</a>
+            <a class="nav-link" href="#screen-3">Расписание</a> -->
+            <a class="nav-link" href="#screen-3">Контакты</a>
+            <a class="nav-link" href="#screen-4">Зал</a>
         </nav>
         <a class="phone" href="tel:+89045904350">+7 904 590 43 50</a>
         <div id="nav-icon">
@@ -189,7 +191,26 @@
     </article> -->
 
     <div id="screen-2"></div>
-    <div id="screen-3"></div>
+
+    <div id="screen-3">
+        <h3>Наши координаты</h3>
+        <div id="map"></div>
+        <div class="wrapper">
+            <b>Наш адрес:</b>
+            <address>г.Владимир, ул.Верхняя Дуброва, д.26, цокольный этаж</address>
+        </div>
+
+        <div class="wrapper">
+            <b>Контакты:</b>
+            <a class="contact" href="tel:+79004792808">+7 (900) 479 28 08</a>
+            <a class="contact" href="mailto:club.grom@yandex.ru">club.grom@yandex.ru</a>
+        </div>
+
+        <div class="social">
+            <a href="https://vk.com/klub.grom" target="_blank"><img src="img/vk_red.svg" alt="vk"></a>
+            <a href="https://t.me/clubgrom" target="_blank"><img src="img/tg_red.svg" alt="tg"></a>
+        </div>
+    </div>
 
     <div id="screen-4">
         <h3>Наш зал</h3>
@@ -228,32 +249,52 @@
                     <img src="img/full.svg" alt="icon">
                 </div>
             </div>
+            <div class="item-photo" style='background-image: url("img/casa/1.jpeg")'>
+                <div class="full-size" data-fancybox="casa-gallery" data-src="img/casa/1.jpeg">
+                    <img src="img/full.svg" alt="icon">
+                </div>
+            </div>
+            <div class="item-photo" style='background-image: url("img/casa/2.jpeg")'>
+                <div class="full-size" data-fancybox="casa-gallery" data-src="img/casa/2.jpeg">
+                    <img src="img/full.svg" alt="icon">
+                </div>
+            </div>
+            <div class="item-photo" style='background-image: url("img/casa/3.jpeg")'>
+                <div class="full-size" data-fancybox="casa-gallery" data-src="img/casa/3.jpeg">
+                    <img src="img/full.svg" alt="icon">
+                </div>
+            </div>
         </div>
     </div>
 
     <footer id="footer">
         <div class="left">
-            <img src="img/logo.svg" alt="logo">
-            <small>
-                &copy; 2023 "ГРОМ"<br>Все права защищены
-            </small>
-        </div>
-        <div class="right">
             <a class="contact" href="tel:+79004792808">+7 (900) 479 28 08</a>
             <a class="contact" href="mailto:club.grom@yandex.ru">club.grom@yandex.ru</a>
             <address>
                 г.Владимир<br>ул.Верхняя Дуброва<br>д.26, цокольный этаж
             </address>
             <div class="social">
-                <a href="https://vk.com/klub.grom">
-                    <img src="img/vk.svg" alt="vk">
-                </a>
-                <a href="https://t.me/clubgrom">
-                    <img src="img/tg.svg" alt="tg">
-                </a>
+                <a href="https://vk.com/klub.grom" target="_blank"><img src="img/vk_red.svg" alt="vk"></a>
+                <a href="https://t.me/clubgrom" target="_blank"><img src="img/tg_red.svg" alt="tg"></a>
             </div>
         </div>
-        <div id="map"></div>
+        <div class="center">
+            <img src="img/logo.svg" alt="logo">
+            <small>
+                &copy; 2023 "ГРОМ"<br>Все права защищены
+            </small>
+        </div>
+        <div class="right">
+            <nav>
+                <a class="nav-link" href="#screen-1">Дисциплины</a>
+                <!-- <a class="nav-link" href="#screen-2">Цены</a>
+                    <a class="nav-link" href="#screen-3">Тренеры</a>
+                    <a class="nav-link" href="#screen-3">Расписание</a> -->
+                <a class="nav-link" href="#screen-3">Контакты</a>
+                <a class="nav-link" href="#screen-4">Зал</a>
+            </nav>
+        </div>
     </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>

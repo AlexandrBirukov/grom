@@ -36,7 +36,7 @@ $(function () {
         $('#header-nav').removeClass('mobile-nav'); // анимация навигации
         $('.phone').removeClass('mobile-phone'); // анимация телефона
 
-        let destination = $($(this).attr('href')).offset().top - 70;
+        let destination = $($(this).attr('href')).offset().top;
         $('html:not(:animated),body:not(:animated)').animate({ scrollTop: destination }, 600);
     });
 

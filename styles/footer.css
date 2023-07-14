@@ -2,155 +2,111 @@ footer {
     background-color: var(--dark);
     width: 100%;
     height: auto;
-    padding: 0 0 0 40px;
+    padding: 40px;
 
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 4fr;
-    align-items: center;
+    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-footer .left img {
-    width: 200px;
+footer .center img {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: auto;
 }
 
-footer .left small {
-    padding: 40px 0 0 36px;
+footer .center small {
+    padding-top: 40px;
     color: white;
     font-weight: 100;
     display: block;
     line-height: 18px;
+    text-align: center;
 }
 
-footer .right address {
+footer .right nav {
+    padding: 0;
+}
+
+footer .right nav .nav-link {
+    text-align: right;
+    display: block;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 0 10px 0;
+    border-bottom: none;
+}
+
+footer .right nav .nav-lin:hover {
+    border-bottom: none;
+}
+
+footer .left address {
     font-style: normal;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 100;
     line-height: 160%;
     color: white;
     padding-top: 20px;
 }
 
-#map {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-}
-
-footer .right {
-    text-align: right;
-}
-
-footer .right .contact {
+footer .left .contact {
     display: block;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 160%;
-    font-weight: 100;
-    opacity: .7;
+    font-weight: 300;
     letter-spacing: normal;
     transition: all .3s ease;
 }
 
-footer .right .contact:hover {
-    opacity: 1;
-    letter-spacing: 1.4px;
+footer .left .social {
+    padding-top: 30px;
 }
 
-footer .right .social {
-    padding-top: 50px;
+footer .left .social a {
+    margin-right: 20px;
 }
 
-footer .right .social a {
-    opacity: .5;
-    transition: all .3s ease;
+footer .left .social a img {
     width: 48px;
     height: 48px;
-    padding: 5px;
-}
-
-footer .right .social a:hover {
-    opacity: 1;
-    transition: all .3s ease;
 }
 
 @media only screen and (max-width: 850px) {
     footer {
         position: relative;
         height: auto;
-        min-height: calc(100vh - 70px);
-        padding: 20px 20px 0;
+        padding: 40px 20px;
 
         grid-gap: 0;
         grid-template-columns: 1fr;
         grid-template-areas:
-            "rrr"
-            "lll"
-            "ccc";
-    }
-
-    footer .left img {
-        display: block;
-        margin: auto;
-        width: 80%;
-    }
-
-    footer .left small {
-        text-align: center;
-        padding: 20px 0;
+            "ttt"
+            "bbb";
     }
 
     footer .left {
-        grid-area: lll;
-        padding-bottom: 0px;
-    }
-
-    footer .right address {
-        font-size: 14px;
-        padding-top: 10px;
+        grid-area: ttt;
         text-align: center;
+        padding-bottom: 40px;
     }
 
-    #map {
-        grid-area: ccc;
-        width: calc(100% + 40px);
-        height: 200px;
-        margin: 0 -20px;
-        border-radius: 0;
-        overflow: hidden;
+    footer .center {
+        grid-area: bbb;
     }
 
-    footer .right {
-        grid-area: rrr;
-        text-align: center;
+    footer .left .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
     }
 
-    footer .right .contact {
-        font-size: 22px;
-        font-weight: 400;
-        opacity: 1;
-        letter-spacing: normal;
-    }
-
-    footer .right .contact:hover {
-        letter-spacing: normal;
-    }
-
-    footer .right .social {
-        padding-top: 10px;
-    }
-
-    footer .right .social a {
-        opacity: 1;
-        transition: all .3s ease;
-        width: 56px;
-        height: 56px;
-        padding: 5px;
-    }
-
-    footer .right .social a img {
-        width: 56px;
-        height: 56px;
+    footer .left .social a {
+        margin: 0 10px;
     }
 }
