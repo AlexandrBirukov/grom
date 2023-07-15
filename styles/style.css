@@ -25,32 +25,6 @@ body {
     -webkit-text-size-adjust: none;
 }
 
-#scroll-to-top {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    z-index: 99;
-    width: 70px;
-    height: 70px;
-    border-radius: 50px;
-    background: rgb(205, 205, 205);
-    display: none;
-    text-align: center;
-    padding-top: 9px;
-    opacity: .5;
-    transition: all .2s ease;
-}
-
-#scroll-to-top img {
-    width: 50px;
-    height: auto;
-    opacity: .7;
-}
-
-#scroll-to-top:hover {
-    opacity: 1;
-}
-
 #preloader {
     position: fixed;
     top: 0;
@@ -68,21 +42,6 @@ body {
     width: 300px;
     height: auto;
     /* visibility: hidden; */
-}
-
-@media only screen and (max-width: 850px) {
-    #scroll-to-top {
-        bottom: 10px;
-        right: 10px;
-        width: 60px;
-        height: 60px;
-        opacity: .8;
-    }
-
-    #scroll-to-top img {
-        width: 40px;
-        height: auto;
-    }
 }
 
 /*_______________________witas discipline section*/

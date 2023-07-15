@@ -1,0 +1,114 @@
+#scroll-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  z-index: 999;
+  cursor: pointer;
+}
+#scroll-to-top img {
+  transition: all 0.3s ease;
+  width: 40px;
+  height: auto;
+  z-index: 99;
+}
+#scroll-to-top svg {
+  display: none;
+}
+#scroll-to-top:hover img {
+  width: 50px;
+  height: auto;
+}
+
+.btn-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 98;
+  width: 70px;
+  height: 70px;
+  filter: url("#filter");
+}
+
+.ball {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+}
+.ball:before {
+  background: #ff6969;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+.ball:nth-child(1) {
+  transform: translate(-55px);
+  animation: x-axis-lateral 2s infinite alternate ease-in-out;
+}
+.ball:nth-child(1):before {
+  animation: y-axis-lateral 1s infinite 0.1s alternate ease-in-out;
+}
+.ball:nth-child(2) {
+  animation: x-axis 2s infinite alternate ease-in-out;
+}
+.ball:nth-child(2):before {
+  animation: y-axis 1s infinite 0.5s alternate ease-in-out;
+}
+.ball:nth-child(3) {
+  transform: translate(55px, 65px);
+  animation: x-axis-lateral 2s infinite alternate ease;
+}
+.ball:nth-child(3):before {
+  animation: y-axis-lateral 1s infinite 0.4s alternate ease-in-out;
+}
+
+@keyframes x-axis {
+  0% {
+    transform: translate(-85px);
+  }
+  100% {
+    transform: translate(85px);
+  }
+}
+@keyframes y-axis {
+  0% {
+    transform: translateY(35px);
+  }
+  100% {
+    transform: translateY(-55px) scale(0.8);
+    background: #ff6969;
+  }
+}
+@keyframes x-axis-lateral {
+  0% {
+    transform: translate(-30px);
+  }
+  100% {
+    transform: translate(30px);
+  }
+}
+@keyframes y-axis-lateral {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-50px);
+    background: #ff6969;
+  }
+}
+@media only screen and (max-width: 850px) {
+  #scroll-to-top {
+    display: none !important;
+  }
+}/*# sourceMappingURL=up-btn.css.map */

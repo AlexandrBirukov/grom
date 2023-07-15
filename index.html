@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="styles/animation.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/up-btn.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/screen-1.css">
     <link rel="stylesheet" href="styles/screen-3.css">
@@ -54,7 +55,27 @@
         <img src="img/logo_black.svg" alt="logo" class="bounce">
     </div>
 
-    <a href="#" id="scroll-to-top"><img src="img/arrow.svg" alt="arrow"></a>
+    <!-- КНОПКА НАВЕРХ -->
+    <div id="scroll-to-top">
+        <div class="btn-wrapper">
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+        </div>
+        <img src="img/arrow.svg" alt="arrow">
+
+        <svg>
+            <defs>
+                <filter id="filter">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 24 -10"
+                        result="filter" />
+                    <feComposite in="SourceGraphic" in2="filter" operator="atop" />
+                </filter>
+            </defs>
+        </svg>
+    </div>
+    <!-- КНОПКА НАВЕРХ -->
 
     <header id="header">
         <img class="logo" src="img/logo-long.svg" alt="log">
