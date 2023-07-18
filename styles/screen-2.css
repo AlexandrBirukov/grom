@@ -1,0 +1,79 @@
+#screen-2 {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 60px 40px;
+    background-color: #ededed;
+    
+}
+
+#screen-2 h3 {
+    text-align: left;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    max-width: 1040px;
+    padding: 0 40px;
+    margin: auto;
+}
+
+.pricetext {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 1040px;
+    padding: 0 40px;
+    margin: auto;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    padding: 20px 0 20px;
+    margin: auto;
+    max-width: 960px;
+    
+}
+
+.stiky:hover {
+    transform: scale(1.05);
+}
+
+.stiky {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:500px;
+  width:300px;
+  padding:5px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+  border-radius: 15px;
+  transition: transform .1s linear;
+  text-align: center;
+}
+
+.stiky p {
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+    max-width: 600px;
+    padding: 2em;
+}
+
+.price {
+    box-sizing: border-box;
+    color: black;
+    max-width: 600px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    max-width: 600px;
+    padding: 0em;
+    text-align: center;
+}
