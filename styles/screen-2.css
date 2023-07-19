@@ -12,7 +12,7 @@
     font-size: 32px;
     font-weight: 600;
     text-transform: uppercase;
-    max-width: 1040px;
+    max-width: 960px;
     padding: 0 40px;
     margin: auto;
 }
@@ -21,7 +21,7 @@
     text-align: left;
     font-size: 20px;
     font-weight: 300;
-    max-width: 1040px;
+    max-width: 960px;
     padding: 0 40px;
     margin: auto;
 }
@@ -53,7 +53,7 @@
   padding:5px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
   border-radius: 15px;
-  transition: transform .1s linear;
+ /* transition: transform .1s linear;*/
   text-align: center;
 }
 
@@ -62,18 +62,57 @@
     font-weight: 500;
     color: black;
     max-width: 600px;
-    padding: 2em;
+    padding: 1em;
 }
 
 .price {
     box-sizing: border-box;
     color: black;
-    max-width: 600px;
-    text-align: center;
     font-size: 30px;
     font-weight: 600;
     color: black;
-    max-width: 600px;
-    padding: 0em;
+    padding: 100px 5px 50px 5px;
     text-align: center;
+}
+
+.stikycont_tel {
+    /*padding-top: 30px;*/
+    transition: transform .1s linear;     
+    padding-bottom: 10px;
+}
+
+.stikycont_tel a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stikycont_tel a img {
+    width: 60px;
+    height: 60px;   
+    
+}
+.stikycont_tel:hover {
+    transform: scale(1.2);
+}
+
+.stikycont_mail {    
+    bottom: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform .1s linear;     
+    
+}
+
+/*.stikycont_mail a {
+    margin-left: auto;
+    margin-right: auto;
+}*/
+
+.stikycont_mail a img {
+    width: 60px;
+    height: 60px;   
+    
+}
+.stikycont_mail:hover {
+    transform: scale(1.2);
 }
