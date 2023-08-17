@@ -12,9 +12,8 @@
     font-weight: 600;
     text-transform: uppercase;
     margin: auto;
-    max-width: 1240px;
+    max-width: 1180px;
     line-height: 1.2;
-    padding: 0 40px;
 }
 
 #screen-4 p {
@@ -22,8 +21,7 @@
     font-size: 16px;
     font-weight: 300;
     margin: auto;
-    max-width: 1240px;
-    padding: 0 40px;
+    max-width: 1180px;
 }
 
 #screen-4 .foto-casa {
@@ -32,8 +30,8 @@
     grid-gap: 2px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin: auto;
-    max-width: 1240px;
-    padding: 20px 40px;
+    max-width: 1180px;
+    padding: 20px 0;
 }
 
 .item-photo {
@@ -65,16 +63,22 @@
 
 @media only screen and (max-width: 850px) {
     #screen-4 {
-        padding: 80px 0 0;
+        padding: 40px 0 0;
     }
 
     #screen-4 h3 {
         font-size: 28px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    #screen-4 p {
+        text-align: center;
+        padding: 20px 20px 0;
     }
 
     #screen-4 .foto-casa {
-        padding: 10px 0 40px;
-        grid-gap: 10px;
+        padding: 40px 0 2px;
         max-width: 920px;
     }
 

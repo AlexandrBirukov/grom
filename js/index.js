@@ -60,7 +60,7 @@ $(function () {
         $('#header-nav').removeClass('mobile-nav'); // анимация навигации
         $('.phone').removeClass('mobile-phone'); // анимация телефона
 
-        let destination = $($(this).attr('href')).offset().top;
+        let destination = $($(this).attr('href')).offset().top - 50;
         $('html:not(:animated),body:not(:animated)').animate({ scrollTop: destination }, 600);
     });
 
@@ -84,25 +84,6 @@ $(function () {
             clickable: true,
         },
     });
-
-
-    // --- Модальное видео ---
-
-    // $('.coach').on('click', function () {
-    //     let vid = $(this).attr('data-vid');
-    //     $('#coach-vid').html(`<source src="${vid}" type="video/mp4"></source>`)
-    //     $('#coachModal').arcticmodal({
-    //         overlay: {
-    //             css: {
-    //                 opacity: .9
-    //             }
-    //         },
-    //         beforeClose: function (data, el) {
-    //             $('#coach-vid').trigger('pause');
-    //             $('#coach-vid').html('');
-    //         }
-    //     });
-    // });
 
 
     // --- Карта ---
