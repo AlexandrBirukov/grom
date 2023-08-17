@@ -86,6 +86,25 @@ $(function () {
     });
 
 
+    // --- Модальное видео ---
+
+    // $('.coach').on('click', function () {
+    //     let vid = $(this).attr('data-vid');
+    //     $('#coach-vid').html(`<source src="${vid}" type="video/mp4"></source>`)
+    //     $('#coachModal').arcticmodal({
+    //         overlay: {
+    //             css: {
+    //                 opacity: .9
+    //             }
+    //         },
+    //         beforeClose: function (data, el) {
+    //             $('#coach-vid').trigger('pause');
+    //             $('#coach-vid').html('');
+    //         }
+    //     });
+    // });
+
+
     // --- Карта ---
 
     ymaps.ready(init);
