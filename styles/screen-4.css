@@ -8,11 +8,13 @@
 
 #screen-4 h3 {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
-    font-size: 52px;
+    font-size: 44px;
     font-weight: 600;
     text-transform: uppercase;
     margin: auto;
-    max-width: 960px;
+    max-width: 1240px;
+    line-height: 1.2;
+    padding: 0 40px;
 }
 
 #screen-4 p {
@@ -20,16 +22,18 @@
     font-size: 16px;
     font-weight: 300;
     margin: auto;
-    max-width: 960px;
+    max-width: 1240px;
+    padding: 0 40px;
 }
 
 #screen-4 .foto-casa {
     padding: 20px 0 40px;
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 2px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin: auto;
-    max-width: 960px;
+    max-width: 1240px;
+    padding: 20px 40px;
 }
 
 .item-photo {
@@ -41,11 +45,10 @@
     background-position: center;
     overflow: hidden;
     transition: all .3s ease;
-    filter: grayscale(.5);
+    filter: grayscale(100%);
 }
 
 .item-photo:hover {
-    transform: scale(1.05);
     filter: grayscale(0);
 }
 
