@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -32,17 +32,22 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="styles/animation.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/up-btn.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/screen-1.css">
     <link rel="stylesheet" href="styles/screen-3.css">
     <link rel="stylesheet" href="styles/screen-4.css">
     <link rel="stylesheet" href="styles/footer.css">
+
+    <link rel="stylesheet" href="js/swiper/swiper.min.css" />
+    <script src="js/swiper/swiper.min.js"></script>
 
     <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 
@@ -57,28 +62,12 @@
 
     <!-- КНОПКА НАВЕРХ -->
     <div id="scroll-to-top">
-        <div class="btn-wrapper">
-            <div class="ball"></div>
-            <div class="ball"></div>
-            <div class="ball"></div>
-        </div>
         <img src="img/arrow.svg" alt="arrow">
-
-        <svg>
-            <defs>
-                <filter id="filter">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 24 -10"
-                        result="filter" />
-                    <feComposite in="SourceGraphic" in2="filter" operator="atop" />
-                </filter>
-            </defs>
-        </svg>
     </div>
     <!-- КНОПКА НАВЕРХ -->
 
     <header id="header">
-        <img class="logo" src="img/logo-long.svg" alt="log">
+        <img class="logo" src="img/header_logo.svg" alt="log">
         <nav id="header-nav">
             <a class="nav-link" href="#screen-1">Дисциплины</a>
             <!-- <a class="nav-link" href="#screen-2">Цены</a>
@@ -95,6 +84,32 @@
             <span></span>
         </div>
     </header>
+
+    <div id="main-screen">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="img/main/main_2.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main/main_1.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main/main_3.jpg" alt="img">
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="for-text">
+            <!-- <h1>ГРОМ</h1> -->
+            <img src="img/logo_red.svg" alt="logo">
+            <p>Клуб единоборств</p>
+            <address>г.Владимир, ул.Верхняя Дуброва, д.26, цокольный этаж</address>
+        </div>
+    </div>
 
     <div id="screen-1">
         <h3>Дисциплины</h3>

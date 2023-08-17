@@ -64,6 +64,28 @@ $(function () {
         $('html:not(:animated),body:not(:animated)').animate({ scrollTop: destination }, 600);
     });
 
+
+    // --- Главный экран ---
+
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 1,
+        loop: true,
+        effect: "fade",
+        spaceBetween: 30,
+        speed: 1000,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+
+        pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+            clickable: true,
+        },
+    });
+
+
     // --- Карта ---
 
     ymaps.ready(init);
