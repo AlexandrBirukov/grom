@@ -67,19 +67,36 @@ $(function () {
 
     // --- Главный экран ---
 
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('#main-swiper', {
         slidesPerView: 1,
         loop: true,
-        effect: "fade",
+        effect: 'fade',
         spaceBetween: 30,
         speed: 1000,
         autoplay: {
             delay: 5000,
             disableOnInteraction: false,
         },
+    });
 
+
+    // --- Цены ---
+
+    let swiper2 = new Swiper("#price", {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        initialSlide: 2,
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+        },
         pagination: {
-            el: '.swiper-pagination',
+            el: '.pagination-2',
             dynamicBullets: true,
             clickable: true,
         },

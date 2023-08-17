@@ -1,0 +1,40 @@
+#screen-2 {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 60px 0;
+
+    h3 {
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+        font-size: 44px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: auto;
+        max-width: 1240px;
+        line-height: 1.2;
+        padding: 0 40px;
+    }
+
+    h3::first-letter {
+        color: #ed2024;
+    }
+
+    .swiper {
+        width: 100%;
+        padding: 50px 0;
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 50%;
+            height: 60vh;
+
+            .item {
+                width: 100%;
+                height: 100%;
+                background: rgba(186, 186, 186, 0.1);
+                border-radius: 20px;
+            }
+        }
+    }
+}
