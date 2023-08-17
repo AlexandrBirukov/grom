@@ -1,0 +1,44 @@
+#screen-5 {
+  width: 100%;
+  height: auto;
+  padding: 60px 40px;
+}
+#screen-5 h3 {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: auto;
+  max-width: 1180px;
+  line-height: 1.2;
+}
+#screen-5 h3::first-letter {
+  color: #ed2024;
+}
+#screen-5 p {
+  padding: 20px 0 0;
+  font-size: 16px;
+  font-weight: 300;
+  margin: auto;
+  max-width: 1240px;
+}
+
+#fitbaseWidgetContainer {
+  max-width: 1180px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 850px) {
+  #screen-5 {
+    padding: 40px 0;
+  }
+  #screen-5 h3 {
+    font-size: 28px;
+    text-align: center;
+    padding: 0 20px;
+  }
+  #screen-5 p {
+    text-align: center;
+    padding: 20px 20px 0;
+  }
+}/*# sourceMappingURL=screen-5.css.map */

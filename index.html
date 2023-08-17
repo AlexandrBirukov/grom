@@ -45,6 +45,7 @@
     <link rel="stylesheet" href="styles/screen-2.css">
     <link rel="stylesheet" href="styles/screen-3.css">
     <link rel="stylesheet" href="styles/screen-4.css">
+    <link rel="stylesheet" href="styles/screen-5.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="js/swiper/swiper.min.css" />
 
@@ -70,8 +71,7 @@
         <nav id="header-nav">
             <a class="nav-link" href="#screen-1">Дисциплины</a>
             <a class="nav-link" href="#screen-2">Цены</a>
-            <!-- <a class="nav-link" href="#screen-3">Тренеры</a>
-            <a class="nav-link" href="#screen-3">Расписание</a> -->
+            <a class="nav-link" href="#screen-5">Расписание</a>
             <a class="nav-link" href="#screen-3">Контакты</a>
             <a class="nav-link" href="#screen-4">Зал</a>
         </nav>
@@ -325,6 +325,15 @@
         </div>
     </div>
 
+    <div id="screen-5">
+        <h3>Расписание</h3>
+        <div id="fitbaseWidgetContainer">
+            <fitbase-widget theme="light" data-club="1" domain="https://m30913.fitbase.io/"
+                data-src="https://m30913.fitbase.io/vue-resources/schedule-widget/dist/js/app.js"></fitbase-widget>
+        </div>
+        <script src="https://m30913.fitbase.io/vue-resources/schedule-widget/init.js" defer></script>
+    </div>
+
     <footer id="footer">
         <div class="left">
             <a class="contact" href="tel:+79004792808">+7 (900) 479 28 08</a>
@@ -347,8 +356,7 @@
             <nav>
                 <a class="nav-link" href="#screen-1">Дисциплины</a>
                 <a class="nav-link" href="#screen-2">Цены</a>
-                <!-- <a class="nav-link" href="#screen-3">Тренеры</a>
-                    <a class="nav-link" href="#screen-3">Расписание</a> -->
+                <a class="nav-link" href="#screen-5">Расписание</a>
                 <a class="nav-link" href="#screen-3">Контакты</a>
                 <a class="nav-link" href="#screen-4">Зал</a>
             </nav>
