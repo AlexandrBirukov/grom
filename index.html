@@ -1,372 +1,497 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="apple-touch-icon" sizes="57x57" href="img/icon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/icon//apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/icon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/icon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/icon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/icon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/icon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/icon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/icon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/icon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
-    <link rel="manifest" href="img/icon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/icon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Клуб единоборств 'ГРОМ'">
-    <meta property="og:description"
-        content="Современный клуб единоборств во Владимире. Опытные тренеры. Большое количество дисциплин.300 квадратных метров мягкой поверхности.">
-    <meta property="og:url" content="http://xn--90aetehlnv.xn--p1ai/">
-    <meta property="og:image" content="http://xn--90aetehlnv.xn--p1ai/img/main/main_1.jpg">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="styles/animation.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/up-btn.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/screen-1.css">
-    <link rel="stylesheet" href="styles/screen-2.css">
-    <link rel="stylesheet" href="styles/screen-3.css">
-    <link rel="stylesheet" href="styles/screen-4.css">
-    <link rel="stylesheet" href="styles/screen-5.css">
-    <link rel="stylesheet" href="styles/footer.css">
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/icon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/icon//apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/icon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/icon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/icon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/icon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/icon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/icon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/icon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="img/icon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/icon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/icon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="img/icon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Клуб единоборств 'ГРОМ'" />
+    <meta
+      property="og:description"
+      content="Современный клуб единоборств во Владимире. Опытные тренеры. Большое количество дисциплин.300 квадратных метров мягкой поверхности."
+    />
+    <meta property="og:url" content="http://xn--90aetehlnv.xn--p1ai/" />
+    <meta
+      property="og:image"
+      content="http://xn--90aetehlnv.xn--p1ai/img/main/main_1.jpg"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="styles/animation.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/up-btn.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/screen-1.css" />
+    <link rel="stylesheet" href="styles/screen-2.css" />
+    <link rel="stylesheet" href="styles/screen-3.css" />
+    <link rel="stylesheet" href="styles/screen-4.css" />
+    <link rel="stylesheet" href="styles/screen-5.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="js/swiper/swiper.min.css" />
 
     <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 
     <title>Клуб единоборств "Гром"</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div id="preloader">
-        <img src="img/logo_black.svg" alt="logo" class="bounce">
+      <img src="img/logo_black.svg" alt="logo" class="bounce" />
     </div>
 
     <!-- КНОПКА НАВЕРХ -->
     <div id="scroll-to-top">
-        <img src="img/arrow.svg" alt="arrow">
+      <img src="img/arrow.svg" alt="arrow" />
     </div>
     <!-- КНОПКА НАВЕРХ -->
 
     <header id="header">
-        <img class="logo" src="img/header_logo.svg" alt="log">
-        <nav id="header-nav">
-            <a class="nav-link" href="#screen-1">Дисциплины</a>
-            <a class="nav-link" href="#screen-2">Цены</a>
-            <a class="nav-link" href="#screen-5">Расписание</a>
-            <a class="nav-link" href="#screen-3">Контакты</a>
-            <a class="nav-link" href="#screen-4">Зал</a>
-        </nav>
-        <a class="phone" href="tel:+79004792808">+7 904 479 28 08</a>
-        <div id="nav-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+      <img class="logo" src="img/header_logo.svg" alt="log" />
+      <nav id="header-nav">
+        <a class="nav-link" href="#screen-1">Тренеры</a>
+        <a class="nav-link" href="#screen-2">Дисциплины</a>
+        <a class="nav-link" href="#screen-5">Расписание</a>
+        <a class="nav-link" href="#screen-3">Контакты</a>
+        <a class="nav-link" href="#screen-4">Зал</a>
+      </nav>
+      <a class="phone" href="tel:+79004792808">+7 900 479 28 08</a>
+      <div id="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </header>
 
     <div id="main-screen">
-        <div class="swiper" id="main-swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="img/main/main_2.jpg" alt="img">
-                </div>
-                <div class="swiper-slide">
-                    <img src="img/main/main_1.jpg" alt="img">
-                </div>
-                <div class="swiper-slide">
-                    <img src="img/main/main_3.jpg" alt="img">
-                </div>
-            </div>
+      <div class="swiper" id="main-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/main/main_2.jpg" alt="img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/main/main_1.jpg" alt="img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/main/main_3.jpg" alt="img" />
+          </div>
         </div>
-        <div class="for-text">
-            <!-- <h1>ГРОМ</h1> -->
-            <img src="img/logo_red.svg" alt="logo">
-            <p>Клуб единоборств</p>
-            <address>г.Владимир, ул.Верхняя Дуброва, д.26, цокольный этаж</address>
-        </div>
+      </div>
+      <div class="for-text">
+        <!-- <h1>ГРОМ</h1> -->
+        <img src="img/logo_red.svg" alt="logo" />
+        <p>Клуб единоборств</p>
+        <address>г.Владимир, ул.Верхняя Дуброва, д.26, цокольный этаж</address>
+      </div>
     </div>
 
     <div id="screen-1">
-        <h3>Дисциплины</h3>
-        <div class="wrapper">
-            <div class="grid-wrapper">
-                <div class="item" style="background: url(img/coach/t1.jpg)" data-fancybox="t1" data-src="vid/t1.mp4">
-                    <div class="for-text">
-                        <h4>Бокс</h4>
-                        <p>тренер: <span>Артем Аветян</span></p>
-                    </div>
-                </div>
-                <div class="item" style="background: url(img/coach/t2.jpg)" data-fancybox="t2" data-src="vid/t2.mp4">
-                    <div class="for-text">
-                        <h4>Борьба</h4>
-                        <p>тренер: <span>Руслан Куандыков</span></p>
-                    </div>
-                </div>
-
-                <div class="item-logo">
-                    <img src="img/logo.svg" alt="logo">
-                </div>
-
-                <div class="item" style="background: url(img/coach/t3.jpg)" data-fancybox="t3" data-src="vid/t3.mp4">
-                    <div class="for-text">
-                        <h4>Вольная борьба</h4>
-                        <p>тренер: <span>Назирхан Адаев</span></p>
-                    </div>
-                </div>
-
-                <div class="item" style="background: url(img/coach/t4.jpg)" data-fancybox="t4" data-src="vid/t4.mp4">
-                    <div class="for-text">
-                        <h4>ММА</h4>
-                        <p>тренер: <span>Артем Аветян</span></p>
-                    </div>
-                </div>
-                <div class="item" style="background: url(img/coach/t5.jpg)" data-fancybox="t5" data-src="vid/t5.mp4">
-                    <div class="for-text">
-                        <h4>ОФП</h4>
-                        <p>тренер: <span>Александр Телин</span></p>
-                    </div>
-                </div>
-
-                <div class="item-logo">
-                    <img src="img/logo.svg" alt="logo">
-                </div>
-
-                <div class="item" style="background: url(img/coach/t6.jpg)" data-fancybox="t6" data-src="vid/t6.mp4">
-                    <div class="for-text">
-                        <h4>Панкратион</h4>
-                        <p>тренер: <span>Алан Назаров</span></p>
-                    </div>
-                </div>
-                <div class="item" style="background: url(img/coach/t7.jpg)" data-fancybox="t7" data-src="vid/t7.mp4">
-                    <div class="for-text">
-                        <h4>Рукопашный бой</h4>
-                        <p>тренер: <span>Алексей Олейник</span></p>
-                    </div>
-                </div>
+      <h3>Тренеры</h3>
+      <div class="wrapper">
+        <div class="grid-wrapper">
+          <div
+            class="item"
+            style="background: url(img/coach/t1.jpg)"
+            data-fancybox="t1"
+            data-src="vid/t1.mp4"
+          >
+            <div class="for-text">
+              <h4>Бокс</h4>
+              <p>тренер: <span>Артем Аветян</span></p>
             </div>
+          </div>
+          <div
+            class="item"
+            style="background: url(img/coach/t2.jpg)"
+            data-fancybox="t2"
+            data-src="vid/t2.mp4"
+          >
+            <div class="for-text">
+              <h4>Борьба</h4>
+              <p>тренер: <span>Руслан Куандыков</span></p>
+            </div>
+          </div>
+
+          <div class="item-logo">
+            <img src="img/logo.svg" alt="logo" />
+          </div>
+
+          <div
+            class="item"
+            style="background: url(img/coach/t3.jpg)"
+            data-fancybox="t3"
+            data-src="vid/t3.mp4"
+          >
+            <div class="for-text">
+              <h4>Вольная борьба</h4>
+              <p>тренер: <span>Назирхан Адаев</span></p>
+            </div>
+          </div>
+
+          <div
+            class="item"
+            style="background: url(img/coach/t4.jpg)"
+            data-fancybox="t4"
+            data-src="vid/t4.mp4"
+          >
+            <div class="for-text">
+              <h4>ММА</h4>
+              <p>тренер: <span>Артем Аветян</span></p>
+            </div>
+          </div>
+          <div
+            class="item"
+            style="background: url(img/coach/t5.jpg)"
+            data-fancybox="t5"
+            data-src="vid/t5.mp4"
+          >
+            <div class="for-text">
+              <h4>ОФП</h4>
+              <p>тренер: <span>Александр Телин</span></p>
+            </div>
+          </div>
+
+          <div class="item-logo">
+            <img src="img/logo.svg" alt="logo" />
+          </div>
+
+          <div
+            class="item"
+            style="background: url(img/coach/t6.jpg)"
+            data-fancybox="t6"
+            data-src="vid/t6.mp4"
+          >
+            <div class="for-text">
+              <h4>Панкратион</h4>
+              <p>тренер: <span>Алан Назаров</span></p>
+            </div>
+          </div>
+          <div
+            class="item"
+            style="background: url(img/coach/t7.jpg)"
+            data-fancybox="t7"
+            data-src="vid/t7.mp4"
+          >
+            <div class="for-text">
+              <h4>Рукопашный бой</h4>
+              <p>тренер: <span>Алексей Олейник</span></p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div id="screen-2">
-        <h3>Цены</h3>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea eius architecto natus sed, maiores dolore?
-            Quasi blanditiis accusantium recusandae saepe rem dicta consequuntur, quam reiciendis minus, impedit esse
-            animi consequatur!
-        </p>
+      <h3>Дисциплины</h3>
 
-        <div class="swiper" id="price">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="item">
-                        <div class="wrapper">
-                            <div class="picture">
-                                <h4><span>1</span> занятие</h4>
-                            </div>
-                            <div class="info">
-                                <h5><span>350</span> руб.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quae iusto
-                                    repellat porro veniam laboriosam alias ducimus dignissimos exercitationem, nemo
-                                    explicabo, asperiores iure quisquam cupiditate quam odit. Reiciendis, quia delectus.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="item">
-                        <div class="wrapper">
-                            <div class="picture">
-                                <h4><span>4</span> занятия</h4>
-                            </div>
-                            <div class="info">
-                                <h5><span>1200</span> руб.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quae iusto
-                                    repellat porro veniam laboriosam alias ducimus dignissimos exercitationem, nemo
-                                    explicabo, asperiores iure quisquam cupiditate quam odit. Reiciendis, quia delectus.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="item">
-                        <div class="wrapper">
-                            <div class="picture">
-                                <h4><span>8</span> занятий</h4>
-                            </div>
-                            <div class="info">
-                                <h5><span>2200</span> руб.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quae iusto
-                                    repellat porro veniam laboriosam alias ducimus dignissimos exercitationem, nemo
-                                    explicabo, asperiores iure quisquam cupiditate quam odit. Reiciendis, quia delectus.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="item">
-                        <div class="wrapper">
-                            <div class="picture">
-                                <h4><span>12</span> занятий</h4>
-                            </div>
-                            <div class="info">
-                                <h5><span>2900</span> руб.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quae iusto
-                                    repellat porro veniam laboriosam alias ducimus dignissimos exercitationem, nemo
-                                    explicabo, asperiores iure quisquam cupiditate quam odit. Reiciendis, quia delectus.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-pagination pagination-2"></div>
+      <div class="wrapper">
+        <div class="big-item" style="background: url(img/subjects/1.jpg)">
+          <div class="for-text">
+            <h4>Бокс</h4>
+            <p>&mdash; Lorem ipsum dolor sit amet.</p>
+            <p>&mdash; Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
         </div>
+        <div class="grid-wrapper">
+          <div class="item" style="background: url(img/subjects/2.jpg)">
+            <div class="for-text">
+              <h4>Борьба</h4>
+              <p>&mdash; Lorem ipsum dolor sit amet.</p>
+              <p>&mdash; Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+          <div class="item" style="background: url(img/subjects/3.jpg)">
+            <div class="for-text">
+              <h4>Вольная борьба</h4>
+              <p>&mdash; Lorem ipsum dolor sit amet.</p>
+              <p>&mdash; Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+          <div class="item" style="background: url(img/subjects/4.jpg)">
+            <div class="for-text">
+              <h4>ММА</h4>
+              <p>&mdash; Lorem ipsum dolor sit amet.</p>
+              <p>&mdash; Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+          <div class="item" style="background: url(img/subjects/5.jpg)">
+            <div class="for-text">
+              <h4>ОФП</h4>
+              <p>&mdash; Lorem ipsum dolor sit amet.</p>
+              <p>&mdash; Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+          <div class="item" style="background: url(img/subjects/6.jpg)">
+            <div class="for-text">
+              <h4>Панкратион</h4>
+              <p>&mdash; Lorem ipsum dolor sit amet.</p>
+              <p>&mdash; Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+          <div class="item" style="background: url(img/subjects/7.jpg)">
+            <div class="for-text">
+              <h4>Рукопашный бой</h4>
+              <p>&mdash; Lorem ipsum dolor sit amet.</p>
+              <p>&mdash; Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="screen-3">
-        <h3>Наши координаты</h3>
-        <div id="map"></div>
-        <div class="wrapper">
-            <b>Наш адрес:</b>
-            <address>г.Владимир, ул.Верхняя Дуброва, д.26, цокольный этаж</address>
-        </div>
+      <h3>Наши координаты</h3>
+      <div id="map"></div>
+      <div class="wrapper">
+        <b>Наш адрес:</b>
+        <address>г.Владимир, ул.Верхняя Дуброва, д.26, цокольный этаж</address>
+      </div>
 
-        <div class="wrapper">
-            <b>Контакты:</b>
-            <a class="contact" href="tel:+79004792808">+7 (900) 479 28 08</a>
-            <a class="contact" href="mailto:club.grom@yandex.ru">club.grom@yandex.ru</a>
-        </div>
+      <div class="wrapper">
+        <b>Контакты:</b>
+        <a class="contact" href="tel:+79004792808">+7 (900) 479 28 08</a>
+        <a class="contact" href="mailto:club.grom@yandex.ru"
+          >club.grom@yandex.ru</a
+        >
+      </div>
 
-        <div class="social">
-            <a href="https://vk.com/klub.grom" target="_blank"><img src="img/vk_red.svg" alt="vk"></a>
-            <a href="https://t.me/clubgrom" target="_blank"><img src="img/tg_red.svg" alt="tg"></a>
-        </div>
+      <div class="social">
+        <a href="https://vk.com/klub.grom" target="_blank"
+          ><img src="img/vk_red.svg" alt="vk"
+        /></a>
+        <a href="https://t.me/clubgrom" target="_blank"
+          ><img src="img/tg_red.svg" alt="tg"
+        /></a>
+      </div>
     </div>
 
     <div id="screen-4">
-        <h3>ПРОСТРАНСТВО ЗАЛА</h3>
-        <p>
-            Наш зал оснащен новым и современным оборудованием, необходимым для полноценных профессиональных занятий
-            любимым видом спорта
-        </p>
-        <div class="foto-casa">
-            <div class="item-photo" style='background-image: url("img/casa/1.jpg")'>
-                <div class="full-size" data-fancybox="casa-gallery" data-src="img/casa/1.jpg">
-                    <img src="img/full.svg" alt="icon">
-                </div>
-            </div>
-            <div class="item-photo" style='background-image: url("img/casa/2.jpg")'>
-                <div class="full-size" data-fancybox="casa-gallery" data-src="img/casa/2.jpg">
-                    <img src="img/full.svg" alt="icon">
-                </div>
-            </div>
-            <div class="item-photo" style='background-image: url("img/casa/3.jpg")'>
-                <div class="full-size" data-fancybox="casa-gallery" data-src="img/casa/3.jpg">
-                    <img src="img/full.svg" alt="icon">
-                </div>
-            </div>
-            <div class="item-photo" style='background-image: url("img/casa/4.jpg")'>
-                <div class="full-size" data-fancybox="casa-gallery" data-src="img/casa/4.jpg">
-                    <img src="img/full.svg" alt="icon">
-                </div>
-            </div>
-            <div class="item-photo" style='background-image: url("img/casa/5.jpg")'>
-                <div class="full-size" data-fancybox="casa-gallery" data-src="img/casa/5.jpg">
-                    <img src="img/full.svg" alt="icon">
-                </div>
-            </div>
-            <div class="item-photo" style='background-image: url("img/casa/6.jpg")'>
-                <div class="full-size" data-fancybox="casa-gallery" data-src="img/casa/6.jpg">
-                    <img src="img/full.svg" alt="icon">
-                </div>
-            </div>
-            <div class="item-photo" style='background-image: url("img/casa/7.jpg")'>
-                <div class="full-size" data-fancybox="casa-gallery" data-src="img/casa/7.jpg">
-                    <img src="img/full.svg" alt="icon">
-                </div>
-            </div>
-            <div class="item-photo" style='background-image: url("img/casa/8.jpg")'>
-                <div class="full-size" data-fancybox="casa-gallery" data-src="img/casa/8.jpg">
-                    <img src="img/full.svg" alt="icon">
-                </div>
-            </div>
-            <div class="item-photo" style='background-image: url("img/casa/9.jpg")'>
-                <div class="full-size" data-fancybox="casa-gallery" data-src="img/casa/9.jpg">
-                    <img src="img/full.svg" alt="icon">
-                </div>
-            </div>
+      <h3>ПРОСТРАНСТВО ЗАЛА</h3>
+      <p>
+        Наш зал оснащен новым и современным оборудованием, необходимым для
+        полноценных профессиональных занятий любимым видом спорта
+      </p>
+      <div class="foto-casa">
+        <div class="item-photo" style="background-image: url('img/casa/1.jpg')">
+          <div
+            class="full-size"
+            data-fancybox="casa-gallery"
+            data-src="img/casa/1.jpg"
+          >
+            <img src="img/full.svg" alt="icon" />
+          </div>
         </div>
+        <div class="item-photo" style="background-image: url('img/casa/2.jpg')">
+          <div
+            class="full-size"
+            data-fancybox="casa-gallery"
+            data-src="img/casa/2.jpg"
+          >
+            <img src="img/full.svg" alt="icon" />
+          </div>
+        </div>
+        <div class="item-photo" style="background-image: url('img/casa/3.jpg')">
+          <div
+            class="full-size"
+            data-fancybox="casa-gallery"
+            data-src="img/casa/3.jpg"
+          >
+            <img src="img/full.svg" alt="icon" />
+          </div>
+        </div>
+        <div class="item-photo" style="background-image: url('img/casa/4.jpg')">
+          <div
+            class="full-size"
+            data-fancybox="casa-gallery"
+            data-src="img/casa/4.jpg"
+          >
+            <img src="img/full.svg" alt="icon" />
+          </div>
+        </div>
+        <div class="item-photo" style="background-image: url('img/casa/5.jpg')">
+          <div
+            class="full-size"
+            data-fancybox="casa-gallery"
+            data-src="img/casa/5.jpg"
+          >
+            <img src="img/full.svg" alt="icon" />
+          </div>
+        </div>
+        <div class="item-photo" style="background-image: url('img/casa/6.jpg')">
+          <div
+            class="full-size"
+            data-fancybox="casa-gallery"
+            data-src="img/casa/6.jpg"
+          >
+            <img src="img/full.svg" alt="icon" />
+          </div>
+        </div>
+        <div class="item-photo" style="background-image: url('img/casa/7.jpg')">
+          <div
+            class="full-size"
+            data-fancybox="casa-gallery"
+            data-src="img/casa/7.jpg"
+          >
+            <img src="img/full.svg" alt="icon" />
+          </div>
+        </div>
+        <div class="item-photo" style="background-image: url('img/casa/8.jpg')">
+          <div
+            class="full-size"
+            data-fancybox="casa-gallery"
+            data-src="img/casa/8.jpg"
+          >
+            <img src="img/full.svg" alt="icon" />
+          </div>
+        </div>
+        <div class="item-photo" style="background-image: url('img/casa/9.jpg')">
+          <div
+            class="full-size"
+            data-fancybox="casa-gallery"
+            data-src="img/casa/9.jpg"
+          >
+            <img src="img/full.svg" alt="icon" />
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="screen-5">
-        <h3>Расписание</h3>
-        <div id="fitbaseWidgetContainer">
-            <fitbase-widget theme="light" data-club="1" domain="https://m30913.fitbase.io/"
-                data-src="https://m30913.fitbase.io/vue-resources/schedule-widget/dist/js/app.js"></fitbase-widget>
-        </div>
-        <script src="https://m30913.fitbase.io/vue-resources/schedule-widget/init.js" defer></script>
+      <h3>Расписание</h3>
+      <div id="fitbaseWidgetContainer">
+        <fitbase-widget
+          theme="light"
+          data-club="1"
+          domain="https://m30913.fitbase.io/"
+          data-src="https://m30913.fitbase.io/vue-resources/schedule-widget/dist/js/app.js"
+        ></fitbase-widget>
+      </div>
+      <script
+        src="https://m30913.fitbase.io/vue-resources/schedule-widget/init.js"
+        defer
+      ></script>
     </div>
 
     <footer id="footer">
-        <div class="left">
-            <a class="contact" href="tel:+79004792808">+7 (900) 479 28 08</a>
-            <a class="contact" href="mailto:club.grom@yandex.ru">club.grom@yandex.ru</a>
-            <address>
-                г.Владимир<br>ул.Верхняя Дуброва<br>д.26, цокольный этаж
-            </address>
-            <div class="social">
-                <a href="https://vk.com/klub.grom" target="_blank"><img src="img/vk_red.svg" alt="vk"></a>
-                <a href="https://t.me/clubgrom" target="_blank"><img src="img/tg_red.svg" alt="tg"></a>
-            </div>
+      <div class="left">
+        <a class="contact" href="tel:+79004792808">+7 (900) 479 28 08</a>
+        <a class="contact" href="mailto:club.grom@yandex.ru"
+          >club.grom@yandex.ru</a
+        >
+        <address>
+          г.Владимир<br />ул.Верхняя Дуброва<br />д.26, цокольный этаж
+        </address>
+        <div class="social">
+          <a href="https://vk.com/klub.grom" target="_blank"
+            ><img src="img/vk_red.svg" alt="vk"
+          /></a>
+          <a href="https://t.me/clubgrom" target="_blank"
+            ><img src="img/tg_red.svg" alt="tg"
+          /></a>
         </div>
-        <div class="center">
-            <img src="img/logo.svg" alt="logo">
-            <small>
-                &copy; 2023 "ГРОМ"<br>Все права защищены
-            </small>
-        </div>
-        <div class="right">
-            <nav>
-                <a class="nav-link" href="#screen-1">Дисциплины</a>
-                <a class="nav-link" href="#screen-2">Цены</a>
-                <a class="nav-link" href="#screen-5">Расписание</a>
-                <a class="nav-link" href="#screen-3">Контакты</a>
-                <a class="nav-link" href="#screen-4">Зал</a>
-            </nav>
-        </div>
+      </div>
+      <div class="center">
+        <img src="img/logo.svg" alt="logo" />
+        <small> &copy; 2023 "ГРОМ"<br />Все права защищены </small>
+      </div>
+      <div class="right">
+        <nav>
+          <a class="nav-link" href="#screen-1">Тренеры</a>
+          <a class="nav-link" href="#screen-2">Дисциплины</a>
+          <a class="nav-link" href="#screen-5">Расписание</a>
+          <a class="nav-link" href="#screen-3">Контакты</a>
+          <a class="nav-link" href="#screen-4">Зал</a>
+        </nav>
+      </div>
     </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/fancybox/jquery.fancybox.min.js"></script>
     <script src="js/swiper/swiper.min.js"></script>
     <script src="js/index.js"></script>
-</body>
-
+  </body>
 </html>
